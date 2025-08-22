@@ -12,7 +12,7 @@ import java.io.PrintWriter;
 /**
  * Servlet implementation class HelloServlet
  */
-@WebServlet("/HelloServlet/login")
+@WebServlet("/HelloServlet")
 public class HelloServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
        
@@ -40,7 +40,7 @@ public class HelloServlet extends HttpServlet {
 	    	name = c.getValue();}}
 	    if(name.equals("")){
 	    //chuyển sang trang LoginServlet
-	    	resp.sendRedirect("/HelloServlet/login");
+	    	resp.sendRedirect("/HelloServlet/login.html");
 	    }
     //hiển thị lên trang bằng đối tượng PrintWriter()
     printWriter.println("Xin chao " + name);
@@ -55,3 +55,4 @@ public class HelloServlet extends HttpServlet {
 	}
 
 }
+
