@@ -39,7 +39,7 @@ public class LoginServlet extends HttpServlet {
     		//thêm cookie vào response
     		resp.addCookie(cookie);
     		//chuyển sang trang HelloServlet
-    		resp.sendRedirect("/HelloServlet");
+    		resp.sendRedirect("/Baitap01/HelloServlet");
     		}else {
     		//chuyển sang trang LoginServlet
     		resp.sendRedirect("/login.html");
@@ -54,3 +54,4 @@ public class LoginServlet extends HttpServlet {
 
 
 }
+
